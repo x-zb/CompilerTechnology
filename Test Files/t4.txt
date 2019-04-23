@@ -1,0 +1,12 @@
+const K='k',A='a',B='b';
+var a:char;
+    b,c:integer;
+begin
+	a:=K;
+	b:=3;
+	if b-3>0
+		then a:=A
+	else
+		a:=B;
+	write(a)
+end.

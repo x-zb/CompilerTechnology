@@ -1,0 +1,15 @@
+var x:char;
+    y:integer;
+function foo(b:char;c:integer):char;
+	begin
+		foo:=a+57
+	end;
+begin
+	x:=foo(y,y);
+	x:=foo();
+     	x:=foo(x);
+        if y=1 then
+         x:=foo(x,y,x)
+        else
+         y:=0
+end.

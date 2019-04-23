@@ -1,0 +1,13 @@
+const SIZE=-7;
+var A:array[-2]of char;
+    B:array[10]of integer;
+    x:integer;
+    C:array[x+2]of integer;
+begin
+    x:=2+'a'+6;
+    B[10]:=12;
+    x:=B[-4];
+    x:=B[SIZE];
+    SIZE:=13;
+    write("d")
+end.

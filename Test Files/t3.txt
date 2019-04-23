@@ -1,0 +1,24 @@
+const MAX=4;
+var i,j,k:integer;
+    K:array[10]of integer;
+begin 
+  k:=0;
+  for i:=1 to MAX do
+    begin
+      k:=k+i
+    end;
+  write(k);
+  
+  for j:=20 downto k do
+    begin
+      write(j)
+    end;
+  write(j+10);
+  
+  i:=67;
+  for i:=10 to 3 do
+    begin
+      write("errer!")
+    end;
+  write(i)
+end.

@@ -1,0 +1,14 @@
+const SIZE1=8,SIZE2=-3,TRUE='T',FALSE='F';
+var a,b,c:integer;
+function opt(p:integer):integer;
+        	var x:integer;
+        begin
+          x:=a+p;
+          opt:=x+6
+        end;
+begin
+  a:=2;
+  b:=a+3;
+  c:=opt(b);
+  write(c)
+end.

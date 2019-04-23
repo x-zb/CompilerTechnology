@@ -1,0 +1,5 @@
+var a,b:char;
+begin
+   a='s';
+   write(b);
+end.

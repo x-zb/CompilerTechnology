@@ -1,0 +1,66 @@
+const SIZE=8,TRUE='T',FALSE='F';
+var i,k:integer;
+    K:array[50]of integer;
+
+
+  
+procedure Quick(s,t:integer);
+  var i,j:integer;
+  procedure Swap(var x,y:integer);
+    var temp:integer;
+    begin
+      temp:=x;
+      x:=y;
+      y:=temp
+    end;
+  begin
+    if s<t
+      then begin
+             i:=s;
+             j:=t+1;
+             do
+               begin
+                 do
+                   i:=i+1
+                 while (K[s]-K[i])*(t-i)>0;
+                 do
+                   j:=j-1
+                 while (K[j]-K[s])*(j-s)>0;
+                 if i<j 
+                   then Swap(K[i],K[j])
+               end
+             while i<j;
+             Swap(K[s],K[j]);
+             Quick(s,j-1);
+             Quick(j+1,t)
+           end
+  end;
+
+function Check:char;
+  var i:integer;
+  begin
+    Check:=TRUE;
+    for i:=0 to SIZE-2 do
+      if K[i]>K[i+1]
+        then Check:=FALSE
+  end;
+
+begin
+  for i:=0 to SIZE-1 do
+    begin
+      read(k);
+      K[i]:=k
+    end;
+  
+  if Check=TRUE 
+    then write("The input array is already in ascending order:")
+  else begin
+         Quick(0,SIZE-1);
+         write("The ordered array is:")
+       end;
+         
+  for i:=0 to SIZE-1 do
+    begin
+      write(" ",K[i])
+    end
+end.

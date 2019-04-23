@@ -1,0 +1,11 @@
+var a:array[4]of integer;
+begin
+  a[0]:=3;
+  a[1]:=4;
+  a[2]:=a[0]+8;
+  a[3]:=a[0]+a[1];
+  write("array");
+  write(a[0]);
+  write(a[2]);
+  write(a[3])
+end.
