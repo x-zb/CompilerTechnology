@@ -5,4 +5,4 @@ Compiler Technology Curriculum Design 2015, Beihang University, CS undergraduate
 
 A PL0 Compiler (including optimization) in C to transform Pascal to x86 assembly language.
 
-doc.docx is a detailed document in Chinese. 
+A detailed document in Chinese is in the file doc.docx.
